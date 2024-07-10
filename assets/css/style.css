@@ -23,6 +23,7 @@ main {
 }
 
 header {
+    flex:0 1 200px;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: lightgreen;
@@ -30,6 +31,7 @@ header {
 }
 
 header h1 {
+    flex:0 1 200px;
     display: inline-block;
     font-size: 48px;
 }
