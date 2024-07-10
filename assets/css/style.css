@@ -52,14 +52,23 @@ h1 {
     padding: 20px;
 }
 
+article {
+    display: inherit;
+}
+
 h2 {
     color: purple;
     font-size: 150%;
     box-sizing: content-box;
-    border: .2vw solid transparent;
+    border-right: 4px solid transparent;
     border-image: linear-gradient(to bottom,lime 20%, purple) 1 100%;
-    padding: 2vw;
-    margin-right: 1vw;
-    width: 7vw;
+    padding: 20px;
+    margin-right: 20px;
+    width: 100px;
     text-align: center;
+}
+
+ article p {
+    color:purple;
+    padding-left: 50px;
 }
