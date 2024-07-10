@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(197, 166, 206);
+}
+
+a {
+    color: #733776;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+main {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.card {
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+}
+.card header {
+    padding: 20px;
+    background: lightgreen;
+    color: darkgreen;
+  }
+  
+  .card.camera {
+
+    flex: 2 1 200px;
+  }
