@@ -14,12 +14,18 @@ header {
 
 h1 {
     font-size:250%;
+    text-decoration: underline;
+    padding-left: 30px;
+    padding-top:20px;
+
 }
   
   nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
+    padding-right:20px;
+    padding-top:20px;
   }
   
   nav a {
@@ -32,57 +38,28 @@ h1 {
     color: hsl(325, 75%, 47%);
   }
 
-aside {
-    flex: 1;
-    background-color: #b9c6ae;
-    padding: 20px;
+  figure img {
+    height: 100px;
+    width: 100%;
+    background-image: url("../images/banner.png");
+    background-size:contain;
+    background-position: left;
   }
 
   main {
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
 }
 
-  section {
-    flex: 3;
-    background-color: #fff;
-    padding: 20px;
-  }
-.card {
-    flex: 1 0 200px;
-    padding: 10px;
+h2 {
+    color: purple;
+    font-size: 150%;
+    box-sizing: content-box;
+    border: .2vw solid transparent;
+    border-image: linear-gradient(to bottom,lime 20%, purple) 1 100%;
+    padding: 2vw;
+    margin-right: 1vw;
+    width: 7vw;
     text-align: center;
-    border-style: solid;
-    border-width: 2px;
 }
-.card header {
-    padding: 20px;
-    background: lightgreen;
-    color: darkgreen;
-  }
-  
-  .card.camera {
-
-    flex: 2 1 200px;
-  }
-
-  @media screen and (max-width: 768px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
-    main,
-    nav {
-      flex-direction: column;
-    }
-    /* Make the sidebar stack below the body */
-    aside {
-      order: 2;
-    }
-    /* Change the header background */
-    header {
-      background: #772014;
-    }
-    /* Change the navbar and footer background */
-    nav,
-    footer {
-      background-color: #bb8588;
-    }
-  }
