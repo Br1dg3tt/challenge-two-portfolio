@@ -1,59 +1,53 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 body {
-    background-color: rgb(197, 166, 206);
-}
-
-a {
-    color: #733776;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-}
-
-main {
-    display:flex;
-    flex-wrap: wrap;
+display:flex;
+flex-direction: column;
+line-height: 1.3;
 }
 
 header {
-    flex:0 1 200px;
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
     background-color: lightgreen;
     color: darkgreen;
 }
 
-header h1 {
-    flex:0 1 200px;
-    display: inline-block;
-    font-size: 48px;
+h1 {
+    font-size:250%;
+}
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+  }
+  
+  nav a {
+    color: hsl(320, 56%, 31%);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: hsl(325, 75%, 47%);
+  }
+
+aside {
+    flex: 1;
+    background-color: #b9c6ae;
+    padding: 20px;
+  }
+
+  main {
+    display:flex;
+    flex-wrap: wrap;
 }
 
-
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-    font-size: 20px;
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
+  section {
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+  }
 .card {
     flex: 1 0 200px;
     padding: 10px;
@@ -70,4 +64,25 @@ header nav ul li {
   .card.camera {
 
     flex: 2 1 200px;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    nav {
+      flex-direction: column;
+    }
+    /* Make the sidebar stack below the body */
+    aside {
+      order: 2;
+    }
+    /* Change the header background */
+    header {
+      background: #772014;
+    }
+    /* Change the navbar and footer background */
+    nav,
+    footer {
+      background-color: #bb8588;
+    }
   }
