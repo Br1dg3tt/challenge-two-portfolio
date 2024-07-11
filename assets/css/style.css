@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     align-items:center;
     background-color: #098789;
-    color: darkgreen;
+    color: #2b1818;
 }
 
 header h1 {
@@ -53,7 +53,7 @@ header h1 {
   .top-background h2 {
     background-color: #142c37;
     color: #098789;
-    font-size: 35px;
+    font-size: 25px;
     padding: 0 10px;
     display: flex;
     justify-content: center;
@@ -88,6 +88,20 @@ h3 {
  article p {
     color: #19dac0;
     padding-left: 50px;
+}
+
+.card {
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.card header {
+  padding: 20px;
+  background: lightgreen;
+  color: ;
 }
 
 h4 {
