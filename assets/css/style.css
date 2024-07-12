@@ -1,112 +1,116 @@
+/*Applies to all elements*/
 body {
-  display:flex;
+  display: flex;
   flex-direction: column;
   line-height: 1.3;
   background-color: #098789;
-  }
-  
-  header {
-      display: flex;
-      justify-content: space-between;
-      align-items:center;
-      background-color: #098789;
-      color: #2b1818;
-  }
-  
-  header h1 {
-      font-size:250%;
-      text-decoration: underline;
-      padding-left: 40px;
-      padding-top:20px;
-      padding-right: 20px;
-      padding-bottom: 10px;
-      background-color: #142c37;
-      color: #098789;
-  
-  }
-  .top-background {
-      background-image: url("../images/background.png");
-      background-position: bottom;
-      background-size: cover;
-      background-attachment: fixed;
-      height: 250px;
-      position: relative;
-    }
-    
-    .top-background h2 {
-      background-color: #142c37;
-      color: #098789;
-      font-size: 25px;
-      padding: 0 10px;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      position: absolute;
-      bottom: 20px;
-      right: 5%;
-    }
-    
-    nav ul {
-      display: flex;
-      justify-content: space-between;
-      min-width: 300px;
-      padding-right:20px;
-      padding-top:20px;
-    }
-    
-    nav a {
-      color: #492485;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    
-    nav a:hover {
-      color: #d21e87;
-      background-color: #142c37;
-      padding: 10px;
-    }
-  
-    
-    .main {
-              display: flex;
-              flex-direction:column;
-              align-items: center;
-              justify-content:center;
-          }
-          .main-containers {
-              display: flex;
-              justify-content: center;
-              width: 90%;
-              margin: 3px;
-          }
-          .left-side {
-              display: flex;
-              width: 20%;
-              color: #492485;
-              font-size: 150%;
-              box-sizing: content-box;
-              border-right: 4px solid transparent;
-              border-image: linear-gradient(to bottom,#142c37 20%, #19dac0) 1 100%;
-              padding: 20px;
-              margin-right: 20px;
-              width: 100px;
-              text-align: center;
-          }
-          .right-side {
-              display: flex;
-              
-              width: 70%;
-              padding:3px;
-          }
-           p {
-              display: inherit;
-              color: #19dac0;
-              padding-left: 50px;
-  }
-  
-          h4 {
-          color: #2b1818;
-          text-decoration: overline;
-          text-align: center;
-      }
-         
+}
+/*Header Elements*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #098789;
+  color: #2b1818;
+}
+
+header h1 {
+  font-size: 250%;
+  text-decoration: underline;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  background-color: #142c37;
+  color: #098789;
+
+}
+/*Adds Style to top background image and adds fixed scrolling*/
+.top-background {
+  background-image: url("../images/background.png");
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 250px;
+  position: relative;
+}
+
+.top-background h2 {
+  background-color: #142c37;
+  color: #098789;
+  font-size: 25px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  right: 5%;
+}
+/*Adds style and hover elements to both navigation lists on top and bottom*/
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+nav a {
+  color: #492485;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #d21e87;
+  background-color: #142c37;
+  padding: 10px;
+}
+
+/*Creates Containers for Main Content*/
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-containers {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 3px;
+}
+
+.left-side {
+  display: flex;
+  width: 30%;
+  color: #492485;
+  font-size: 150%;
+  box-sizing: content-box;
+  border-right: 4px solid transparent;
+  border-image: linear-gradient(to bottom, #142c37 20%, #19dac0) 1 100%;
+  padding: 20px;
+  margin-right: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.right-side {
+  display: flex;
+  width: 70%;
+  padding: 3px;
+}
+/*Adds style elements to paragraphs*/
+p {
+  display: inherit;
+  color: #19dac0;
+  padding-left: 50px;
+}
+/*Adds style elements to footer*/
+h4 {
+  color: #2b1818;
+  text-decoration: overline;
+  text-align: center;
+}
